@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Product </title>
+    <link rel="stylesheet" href="src/css/appProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        
+        <h2>Controle de produtos</h2>
+    </header>
+    <main>
+        <section class="conteinerActionApp">
+            <div id="AddProduct">
+                <h2>Add a Product</h2>
+                <form id="form_product">
+                    <div class="inputsDefault">
+                        <input type="text" name="nameProduct" id="nameProduct" autocomplete="off" placeholder="Nome do produto">
+                        <br>
+                        <input type="text" name="price" id="priceProduct" autocomplete="off" placeholder="Preço do produto ">
+                        <br>
+                        <input type="text" name="date" autocomplete="off" id="dateProduct" placeholder="Data da compra ex: 01/02/2021">
+                        <br>
+                    </div>
+                    <input type="submit" id="buttonSendData" value="Salvar">
+                </form>
+            </div>
+           <div class="areaAnswer">
+            <button class="btnDelete">
+                <span>
+                    <i id="btnC" class="fa-regular fa-circle-xmark"></i>Limpar lista
+                </span>
+            </button>          
+           </div>
+        </section>
+    </main>
+</body>
+<script src="src/js/appProduct.js"></script>
+</html>

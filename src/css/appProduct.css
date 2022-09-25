@@ -1,0 +1,198 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* pratical herança prototypes of JS */
+
+* {
+
+    font-family: 'Roboto', sans-serif; 
+    padding: 0;
+    margin: 0; 
+}
+
+
+body {
+    background-image: linear-gradient(to left, #026873, #00977c);
+}
+
+header {
+    background-color: #323837;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    padding: 10px 20px; 
+}
+
+header h2 {
+    font-size: 1.8em;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+
+/* conteiner action */
+
+.conteinerActionApp {
+    display: block;
+    max-width: 700px;
+    margin: 2% auto;
+    padding: 20px;
+}
+
+#AddProduct {
+    background-color: #323837e5;
+    color: white; 
+    display: block;
+    min-height: 300px;
+    border-radius: 7px;
+}
+
+#AddProduct h2 {
+    background-color: #00b890;
+    font-size: 1.8em;
+    text-align: left;
+    border-radius: 7px 7px 0 0 ;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.inputsDefault input {
+    background: none;
+    color: white;
+    border: 1px solid #00cca0;
+    outline: none;
+    font-size: 17px;
+    border-radius: 3px;
+    width: 90%;
+    padding: 4px;
+    margin: 5px 10px;
+    transition: all .5s;
+}
+
+input::placeholder {
+    color: #ffffffa1;
+    transition: all .7s;
+}
+
+
+.inputsDefault input:hover {
+    transform: translateX(0.2em);
+}
+
+#buttonSendData {
+    background-color: #00b890;
+    color: white;
+    filter: drop-shadow(0 0 0.4em #2d302f62); 
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    width: 60%;
+    padding: 6px 7px;
+    margin: 10px auto;
+    transition: all .7s;
+}
+
+
+#buttonSendData:hover {
+    filter: drop-shadow(0 0 0.0em #dcfff70e); 
+}
+
+
+/* Conteiner list for JS */
+
+.areaAnswer {
+    display: none;
+    background-image: linear-gradient(to left, #323837, #323837);
+    border-top: 6px solid #00cca0;
+    border-radius: 8px;
+    max-height: 170px;
+    overflow: scroll;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.areaAnswer::-webkit-scrollbar {
+    background-color: #303030;
+}
+
+.areaAnswer::-webkit-scrollbar-thumb {
+    background-color: #079b82ae;
+}
+
+.textInsert {
+    display: flex;
+    align-items: center;
+}
+
+.textInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxElement {
+    background-color: aliceblue;
+    color: black;
+    display: block;
+    width: 100%;
+    line-height: 1.7em;
+    font-size: 20px;
+    border-radius: 5px ;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.btnDelete {
+    background: #323837;
+    color: white; 
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 5px;
+    margin: 0 4px;
+    transition: all .7s;
+}
+
+#btnC {
+    margin: 4px;
+}
+
+.btnDelete span {
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btnDelete:hover {
+    color: red;
+    transform-style: preserve-3d;
+}
+
+.dateJs {
+    font-size:15px;
+}
+
+
+#iconsMoney {
+    border-bottom: 1px solid rgb(95, 95, 95);
+    font-size: 30px;
+}
+
+@media screen and (max-width: 760px) {
+    .textInfo {
+        display: block;
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .textInfo {
+        font-size: 17px;
+    }
+    
+}
